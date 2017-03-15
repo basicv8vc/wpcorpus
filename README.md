@@ -6,11 +6,11 @@ Paths and file names are configured directly in the scripts right now. Of course
 
 ## Getting a dump
 
-First, you need a Wikipedia article dump. You can get them in English Wikipedia offers: [https://dumps.wikimedia.org/enwiki/](https://dumps.wikimedia.org/enwiki/). Notice, here we only focus on English Wikipedia dump. Run lib/download.sh, it will automatically downloads latest dump like enwiki-11-Mar-2017-pages-articles.xml.bz2. You will need the XML file, so feel free to un-bzip it first. What you get is, well, a huge dump file.
+First, you need a Wikipedia article dump. You can get them in English Wikipedia offers: [https://dumps.wikimedia.org/enwiki/](https://dumps.wikimedia.org/enwiki/). Notice, here we only focus on English Wikipedia dump. Run lib/download.sh, it will automatically downloads latest dump like enwiki-11-Mar-2017-pages-articles.xml.bz2. You will need the XML file, so feel free to un-bzip it first. What you get is, well, a huge dump file. This may takes a long time, you can enjoy a cup of coffee.
 
 ## Chunking the dump
 
-The dump file is huge, so you want to chunk it in order to parallelise processing later. And generally: devide and conquer, you know. 
+The dump file is huge, so you want to chunk it in order to parallelise processing later. And generally: divide and conquer, you know. 
 
 Chunking is done in one step and without parallelisation. bin/chunk.sh is what you need. Configure the chunk size, paths and other parameters in the lib/wpcorpus/chunk.py if you like. What you will get is a bunch of files that are valid Wikipedia XML files including parts of the whole dump.
 
