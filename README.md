@@ -6,7 +6,7 @@ Paths and file names are configured directly in the scripts right now. Of course
 
 ## Getting a dump
 
-First, you need a Wikipedia article dump. You can get them in whatever language Wikipedia offers: [http://dumps.wikimedia.org/backup-index.html](http://dumps.wikimedia.org/backup-index.html). Pick a language, and download a full article dump like enwiki-20121201-pages-articles.xml (of course, with a newer date). You will need the XML file, so feel free to un-bzip it first. What you get is, well, a huge dump file.
+First, you need a Wikipedia article dump. You can get them in English Wikipedia offers: [https://dumps.wikimedia.org/enwiki/](https://dumps.wikimedia.org/enwiki/). Notice, here we only focus on English Wikipedia dump. Run lib/download.sh, it will automatically downloads latest dump like enwiki-11-Mar-2017-pages-articles.xml.bz2. You will need the XML file, so feel free to un-bzip it first. What you get is, well, a huge dump file.
 
 ## Chunking the dump
 
